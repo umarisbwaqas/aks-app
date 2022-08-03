@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: umarisbwaqasaksapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: umarisbwaqasaksapp
+  template:
+    metadata:
+      labels:
+        app: umarisbwaqasaksapp 
+    spec:
+      containers:
+        - name: umarisbwaqasaksapp 
+          image: megatestacr.azurecr.io/umarisbwaqasaksapp
+          ports:
+          - containerPort: 80
