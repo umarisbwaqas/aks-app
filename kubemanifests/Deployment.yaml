@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: webapp-nginx
-        image: megatestacr.azurecr.io/webapp
+        image: megatestacr.azurecr.io/aks-app
         resources:
           limits:
             memory: "128Mi"
